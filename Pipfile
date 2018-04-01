@@ -8,7 +8,6 @@ verify_ssl = true
 [packages]
 argparse = "*"
 "beautifulsoup4" = "*"
-numpy = "*"
 python-telegram-bot = "*"
 requests = "*"
 
