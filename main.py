@@ -23,6 +23,7 @@ if __name__ == "__main__":
     scrapper.scrap()
 
     elviajante = ElViajanteBot(
-        config['TELEGRAM']['bot_token'], config['PERSISTENCE']['db_name'])
+        config['TELEGRAM']['bot_token'], config['PERSISTENCE']['db_name'],
+        config['LOGGING']['logger_name'])
 
     elviajante.send_unfetched_travels(config['TELEGRAM']['chat_id'])

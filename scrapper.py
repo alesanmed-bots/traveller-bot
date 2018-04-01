@@ -13,7 +13,6 @@ from database.transactions import TransactionsEngine
 from bs4 import BeautifulSoup as bs
 import time
 import random
-import tools.logger as logger
 
 
 class TravelScrapper():
