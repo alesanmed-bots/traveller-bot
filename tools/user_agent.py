@@ -1,12 +1,5 @@
 # encoding: utf-8
-"""
-user_agent
- 
-Created by Donzok on 18/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 
-# -*- coding: utf-8 -*-
 import random
 
 agents_list = ["Mozilla/4.0 (compatible; MSIE 7.0; America Online Browser 1.1; Windows NT 5.1; (R1 1.5); .NET CLR 2.0.50727; InfoPath.1)",

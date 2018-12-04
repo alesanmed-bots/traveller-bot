@@ -1,11 +1,6 @@
 # encoding: utf-8
-"""
-transactions
- 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 
+import logging
 import sqlite3
 import datetime
 

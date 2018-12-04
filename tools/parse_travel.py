@@ -1,10 +1,4 @@
 # encoding: utf-8
-"""
-parse_travel
- 
-Created by Donzok on 21/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 
 from bs4 import BeautifulSoup as bs
 import requests

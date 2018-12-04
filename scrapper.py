@@ -1,10 +1,5 @@
 # encoding: utf-8
-"""
-scrapper.py
 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 import logging
 import requests
 from tools.user_agent import get_user_agent
