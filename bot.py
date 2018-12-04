@@ -23,7 +23,7 @@ class ElViajanteBot:
 
         # self.updater.start_polling()
 
-        self.transactions_engine = TransactionsEngine(db_name)
+        self.transactions_engine = TransactionsEngine(db_name, logger)
 
     def start(self, bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Soy un bot sin comandos :(")
