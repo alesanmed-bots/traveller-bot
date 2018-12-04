@@ -1,10 +1,5 @@
 # encoding: utf-8
-"""
-main.py
- 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
+
 from scrapper import TravelScrapper
 from bot import ElViajanteBot
 import tools.logger as logger

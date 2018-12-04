@@ -1,10 +1,5 @@
 # encoding: utf-8
-"""
-scrapper.py
 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 import logging
 import requests
 from tools.user_agent import get_user_agent
@@ -21,7 +16,7 @@ class TravelScrapper():
 
         self.logger = logging.getLogger(log_name)
 
-        self.transactions_engine = TransactionsEngine(db_name)
+        self.transactions_engine = TransactionsEngine(db_name, log_name)
 
     def scrap(self):
         header = {'user-agent': get_user_agent()}

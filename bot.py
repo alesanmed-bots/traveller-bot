@@ -1,10 +1,5 @@
 # encoding: utf-8
-"""
-bot
- 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
+
 from database.transactions import TransactionsEngine
 from telegram.ext import Updater
 from telegram.ext import CommandHandler

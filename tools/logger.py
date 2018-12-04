@@ -1,12 +1,5 @@
 # encoding: utf-8
-"""
-logger
 
-Created by Donzok on 19/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
-
-# -*- coding: utf-8 -*-
 import logging
 import os
 import configparser

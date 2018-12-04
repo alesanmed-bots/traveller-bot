@@ -1,17 +1,14 @@
 # encoding: utf-8
-"""
-transactions
- 
-Created by Donzok on 17/06/2017.
-Copyright (c) 2017 . All rights reserved.
-"""
 
+import logging
 import sqlite3
 import datetime
 
 class TransactionsEngine():
-    def __init__(self, db_name):
+    def __init__(self, db_name, log_name):
         self.db_name = db_name
+
+        self.log = logging.getLogger(log_name)
 
         conn = self.connect()
 
@@ -76,10 +73,13 @@ class TransactionsEngine():
 
         cursor = conn.cursor()
 
-        cursor.execute("""INSERT INTO travels VALUES (?, ?, ?, ?)""",
-                    (url, date, datetime.datetime.now(), 0))
+        try:
+            cursor.execute("""INSERT INTO travels VALUES (?, ?, ?, ?)""",
+                        (url, date, datetime.datetime.now(), 0))
 
-        conn.commit()
+            conn.commit()
+        except sqlite3.DatabaseError as exception:
+            self.log.warning('Travel {} not inserted due to: {}'.format(url, str(exception)))
 
         self.disconnect(conn)
 
