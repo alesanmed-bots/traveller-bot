@@ -16,7 +16,7 @@ class TravelScrapper():
 
         self.logger = logging.getLogger(log_name)
 
-        self.transactions_engine = TransactionsEngine(db_name)
+        self.transactions_engine = TransactionsEngine(db_name, log_name)
 
     def scrap(self):
         header = {'user-agent': get_user_agent()}
